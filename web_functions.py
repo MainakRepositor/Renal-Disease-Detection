@@ -7,22 +7,22 @@ from sklearn.tree import DecisionTreeClassifier
 import streamlit as st
 
 
-@st.cache()
+@st.cache_data()
 def load_data():
     """This function returns the preprocessed data"""
 
     # Load the Diabetes dataset into DataFrame.
-    df = pd.read_csv('kidney.csv')
+    df = pd.read_csv('liver.csv')
 
     # Rename the column names in the DataFrame.
     
     # Perform feature and target split
-    X = df[["Bp","Al","Su","Bu","Sc","Sod","Pot","Hemo","Wbcc","Rbcc"]]
-    y = df['Class']
+    X = df[["Age","Gender","Total_Bilirubin","Direct_Bilirubin","Alkaline_Phosphotase","Alamine_Aminotransferase","Aspartate_Aminotransferase","Total_Protiens","Albumin","Albumin_and_Globulin_Ratio"]]
+    y = df['Result']
 
     return df, X, y
 
-@st.cache()
+@st.cache_data()
 def train_model(X, y):
     """This function trains the model and return the model and model score"""
     # Create the model

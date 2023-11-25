@@ -8,15 +8,15 @@ from web_functions import load_data
 
 # Configure the app
 st.set_page_config(
-    page_title = 'Liver Disease Detector',
-    page_icon = 'beer',
+    page_title = 'Renal Disease Prediction',
+    page_icon = 'random',
     layout = 'wide',
     initial_sidebar_state = 'auto'
 )
+
     
 # Import pages
 from Tabs import home, data, predict, visualise
-
 
 
 # Dictionary for pages

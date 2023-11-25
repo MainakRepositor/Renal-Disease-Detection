@@ -1,12 +1,12 @@
-# Liver Disease Predictor
+# Renal Disease Detection
 
-![home](https://user-images.githubusercontent.com/64016811/205837390-62c2aa36-e267-4fc8-a877-b68fafeec3c8.jpeg)
+![home](https://user-images.githubusercontent.com/64016811/205549724-649f2a17-aa3f-439a-a634-80d23b7b7970.jpeg)
+
 
 
 ### Problem : 
 
-What is the main cause of liver disease?
-There are many types of liver disease, which can be caused by infections, inherited conditions, obesity and misuse of alcohol. Over time, liver disease may lead to scarring and more serious complications. Early treatment can help heal the damage and prevent liver failure.
+The kidneys are two bean-shaped organs. Each kidney is about the size of a fist. Your kidneys filter extra water and wastes out of your blood and make urine. Kidney disease means your kidneys are damaged and can’t filter blood the way they should. You are at greater risk for kidney disease if you have diabetes or high blood pressure. If you experience kidney failure, treatments include kidney transplant or dialysis. Other kidney problems include acute kidney injury, kidney cysts, kidney stones, and kidney infections.
 
 ### Solution:
 
@@ -25,8 +25,9 @@ Building an application that can predict the occurrence of a cardiac arrest or t
 |   └─── data.py
 |   └─── predict.py
 |   └─── visualize.py
-└───__pycache__
+|   └───__pycache__
 └─── main.py
+└─── kidney.csv
 └─── web_functions.py
 └─── requirements.txt
 └─── Procfile
@@ -37,12 +38,13 @@ Building an application that can predict the occurrence of a cardiac arrest or t
 ### Note:
 **Incase the application demo doesn't start real quick, you can get an idea about how it looks like from the screenshots**
 
-![image](https://user-images.githubusercontent.com/64016811/198943129-c74e57fb-de6c-4939-bfb8-d6eb4a6e63e4.png)
-![image](https://user-images.githubusercontent.com/64016811/198943200-e54f9366-7c49-48f1-974f-c81d408de29e.png)
-![image](https://user-images.githubusercontent.com/64016811/198943265-d289e544-8890-487d-83bc-7e136acadf65.png)
-![image](https://user-images.githubusercontent.com/64016811/198956316-ee87e87e-daad-42a6-b852-6022a3a913c8.png)
-![1](https://user-images.githubusercontent.com/64016811/198943446-ef8847ba-7c3c-468a-8a3e-4d0ef29ad287.png)
-![image](https://user-images.githubusercontent.com/64016811/198943581-38dc1948-caac-4762-9f1a-1bdf2ef887f3.png)
+![image](https://user-images.githubusercontent.com/64016811/205549988-e03590de-850d-4836-95de-f0b813b24da2.png)
+![image](https://user-images.githubusercontent.com/64016811/205550358-7f06ffae-e57d-4fdd-bc71-9fe3acbbd901.png)
+![image](https://user-images.githubusercontent.com/64016811/205550416-abb3413a-b63e-4c18-9c6b-3ef6c6c8e07d.png)
+![image](https://user-images.githubusercontent.com/64016811/205550482-204f3337-a347-49b3-b1c0-9cb563512732.png)
+![image](https://user-images.githubusercontent.com/64016811/205550509-9af22bcb-d066-49dd-8947-5cfb26c85989.png)
+![image](https://user-images.githubusercontent.com/64016811/205550629-60680073-62d2-4868-905b-3050a7248ac0.png)
+
 
 
 ### Made with 💙 by:

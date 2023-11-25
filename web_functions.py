@@ -12,13 +12,13 @@ def load_data():
     """This function returns the preprocessed data"""
 
     # Load the Diabetes dataset into DataFrame.
-    df = pd.read_csv('liver.csv')
+    df = pd.read_csv('kidney.csv')
 
     # Rename the column names in the DataFrame.
     
     # Perform feature and target split
-    X = df[["Age","Gender","Total_Bilirubin","Direct_Bilirubin","Alkaline_Phosphotase","Alamine_Aminotransferase","Aspartate_Aminotransferase","Total_Protiens","Albumin","Albumin_and_Globulin_Ratio"]]
-    y = df['Result']
+    X = df[["Bp","Al","Su","Bu","Sc","Sod","Pot","Hemo","Wbcc","Rbcc"]]
+    y = df['Class']
 
     return df, X, y
 

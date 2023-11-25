@@ -20,29 +20,26 @@ def app(df, X, y):
     st.set_option('deprecation.showPyplotGlobalUse', False)
 
     # Set the page title
-    st.title("Visualise Brain Stroke Demographics")
+    st.title("Visualise Heart Ailment Demographics")
 
     # Create a checkbox to show correlation heatmap
     if st.checkbox("Show the correlation heatmap"):
         st.subheader("Correlation Heatmap")
 
-        fig = plt.figure(figsize = (8, 3))
+        fig = plt.figure(figsize = (4, 3))
         ax = sns.heatmap(df.iloc[:, 1:].corr(), annot = True)   # Creating an object of seaborn axis and storing it in 'ax' variable
         bottom, top = ax.get_ylim()                             # Getting the top and bottom margin limits.
         ax.set_ylim(bottom + 0.5, top - 0.5)                    # Increasing the bottom and decreasing the top margins respectively.
         st.pyplot(fig)
 
-    if st.checkbox("Total Bilirubin vs Albumin"):
-        st.subheader("Total Bilirubin distribution against Albumin")
-        fig = plt.figure(figsize = (8, 3))
+    if st.checkbox("Sodium Levels vs Blood Pressure"):
         sns.color_palette("rocket", as_cmap=True)
-        ax=sns.scatterplot(x="Total_Bilirubin",y="Albumin",data=df)
+        ax=sns.scatterplot(x="Bp",y="Sod",data=df)
         st.pyplot()
 
-    
     if st.checkbox("Show Sample Results"):
-        safe = (df['Result'] == 1).sum()
-        prone = (df['Result'] == 2).sum()
+        safe = (df['Class'] == 0).sum()
+        prone = (df['Class'] == 1).sum()
         data = [safe,prone]
         labels = ['Safe', 'Detected']
         colors = sns.color_palette('pastel')[0:7]

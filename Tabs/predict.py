@@ -65,18 +65,18 @@ def app(df, X, y):
      
 
         # Print the output according to the prediction
-        if (prediction == 0):
+        if (Hemo < 10 and Sc < 2 and Su < 0.5):
             st.success("The person is relatively safe from Renal Diseases")
 
-        elif(Hemo < 13.5):
+        elif(Hemo > 13.5):
             st.error("The person is prone to get Renal Diseases!!")
             st.warning("High risk of kidney tumour")
 
-        elif(Sc < 2):
+        elif(Sc > 2):
             st.error("The person is prone to get Renal Diseases!!")
             st.warning("Improper filteration")
                         
-        elif(Su < 0.5):
+        elif(Su > 0.5):
             st.error("The person is prone to get Renal Diseases!!")
             st.warning("High blood sugar")
 

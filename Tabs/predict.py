@@ -68,24 +68,24 @@ def app(df, X, y):
             st.error("The person has high risk of Cardiac problems induced by kidney malfunctioning")
             st.warning("Please consult a Nephrologist")
         
-        if(Bu > 200):
+        elif(Bu > 200):
             st.error("High risk of bladder infection or kidney stone")
 
-        if(Hemo > 13.5):
+        elif(Hemo > 13.5):
             st.error("The person is prone to get Renal Diseases!!")
             st.warning("High risk of kidney tumour")
 
-        if(Sc > 30):
+        elif(Sc > 30):
             st.error("The person is prone to get Renal Diseases!!")
             st.warning("Improper filteration")
  
                         
-        if(Su > 0.5):
+        elif(Su > 0.5):
             st.error("The person is prone to get Renal Diseases!!")
             st.warning("High blood sugar")
 
         
-        else:
+        elif (Su < 0.5 and Sc<30 and Hemo < 13.5 and Bu < 200 and Bp < 125):
             st.success("The person is relatively safe from Renal Diseases")
 
             

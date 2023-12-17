@@ -84,6 +84,9 @@ def app(df, X, y):
             st.error("The person is prone to get Renal Diseases!!")
             st.warning("High blood sugar")
 
+        elif (Su > 0.5 and Sc>30 and Hemo > 13.5 and Bu > 200 and Bp > 125):
+            st.error("REQUIRES IMMEDIATE DIALYSIS!!!")
+            st.markdown('''<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d117898.11372844018!2d88.35563498423029!3d22.567279602760603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdialysis%20near%20me!5e0!3m2!1sen!2sin!4v1702800418393!5m2!1sen!2sin" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>''')
         
         elif (Su < 0.5 and Sc<30 and Hemo < 13.5 and Bu < 200 and Bp < 125):
             st.success("The person is relatively safe from Renal Diseases")

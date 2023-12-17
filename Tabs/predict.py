@@ -27,7 +27,7 @@ def app(df, X, y):
     st.markdown(
         """
             <p style="font-size:25px">
-                This app uses <b style="color:green">Decision Tree Classifier</b> for the Renal Disease Prediction.
+                This app uses <b style="color:green">Random Forest Classifier</b> for the Renal Disease Prediction.
             </p>
         """, unsafe_allow_html=True)
     

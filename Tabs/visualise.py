@@ -20,7 +20,7 @@ def app(df, X, y):
     st.set_option('deprecation.showPyplotGlobalUse', False)
 
     # Set the page title
-    st.title("Visualise Heart Ailment Demographics")
+    st.title("Visualise Kidney Ailment Demographics")
 
     # Create a checkbox to show correlation heatmap
     if st.checkbox("Show the correlation heatmap"):

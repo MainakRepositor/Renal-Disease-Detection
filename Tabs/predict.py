@@ -33,6 +33,8 @@ def app(df, X, y):
     
     # Take feature input from the user
     # Add a subheader
+    st.sidebar.markdown('''For BP > 125 : Renal problems induced by kidney malfunctioning <br> For Blood Urea > 200: High risk of bladder infection or kidney stone <br> For Haemoglobin > 13.5: High risk of kidney tumour <br> For Sodium Creatinine > 30 : Improper filteration <br> For Sugar level > 2.5 : Diabetic Renal''')
+    
     st.subheader("Select Values:")
 
     # Take input of features from the user.
@@ -65,7 +67,7 @@ def app(df, X, y):
      
 
         if(Bp > 125):
-            st.error("The person has high risk of Cardiac problems induced by kidney malfunctioning")
+            st.error("The person has high risk of Renal problems induced by kidney malfunctioning")
             st.warning("Please consult a Nephrologist")
         
         elif(Bu > 200):

@@ -33,7 +33,7 @@ def app(df, X, y):
     
     # Take feature input from the user
     # Add a subheader
-    st.sidebar.markdown('''<p style="background-color:yellow; color:black; border-radius:20px"> For BP > 125 : Renal problems induced by kidney malfunctioning <br><br> For Blood Urea > 200: High risk of bladder infection or kidney stone <br><br> For Haemoglobin > 13.5: High risk of kidney tumour <br><br> For Sodium Creatinine > 30 : Improper filteration <br><br> For Sugar level > 2.5 : Diabetic Renal<p>''', unsafe_allow_html = True)
+    st.sidebar.markdown('''<p style="background-color:yellow; color:black; border-radius:8px"> For BP > 125 : Renal problems induced by kidney malfunctioning <br><br> For Blood Urea > 200: High risk of bladder infection or kidney stone <br><br> For Haemoglobin > 13.5: High risk of kidney tumour <br><br> For Sodium Creatinine > 30 : Improper filteration <br><br> For Sugar level > 2.5 : Diabetic Renal<p>''', unsafe_allow_html = True)
     
     st.subheader("Select Values:")
 

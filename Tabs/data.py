@@ -45,15 +45,4 @@ def app(df):
             col = st.selectbox("Column Name", list(df.columns))
             st.dataframe(df[col])
 
-    # Add the link to you dataset
-    st.markdown("""
-                    <p style="font-size:24px">
-                        <a 
-                            href="https://raw.githubusercontent.com/DataMinati/Streamlit-Database/main/heart.csv"
-                            target=_blank
-                            style="text-decoration:none;"
-                        >Get Dataset
-                        </a> 
-                    </p>
-                """, unsafe_allow_html=True
-    )
+    

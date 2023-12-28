@@ -70,6 +70,7 @@ def app(df, X, y):
         
         elif(Bu > 200):
             st.error("High risk of bladder infection or kidney stone")
+            st.warning("Recommended for Renal Ultrasonography")
 
         elif(Hemo > 13.5):
             st.error("The person is prone to get Renal Diseases!!")

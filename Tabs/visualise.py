@@ -26,7 +26,7 @@ def app(df, X, y):
     if st.checkbox("Show the correlation heatmap"):
         st.subheader("Correlation Heatmap")
 
-        fig = plt.figure(figsize = (4, 3))
+        fig = plt.figure(figsize = (14, 7))
         ax = sns.heatmap(df.iloc[:, 1:].corr(), annot = True)   # Creating an object of seaborn axis and storing it in 'ax' variable
         bottom, top = ax.get_ylim()                             # Getting the top and bottom margin limits.
         ax.set_ylim(bottom + 0.5, top - 0.5)                    # Increasing the bottom and decreasing the top margins respectively.

@@ -24,8 +24,14 @@ def app():
     st.markdown('''<table>
                     <tr>
                     <th>Doctor Name</th>
+                    <th>Contact</th>
                      </tr>
                      <tr>
                      <td>Dr. Venkatesh Rajakumar - MD, Nephrology</td>
+                     <td>+91-80561-00215</td>
+                    </tr>
+                    <tr>
+                     <td>Dr. M Saravanan- MD, FRCS, Nephrology</td>
+                     <td>+91-73388-22333</td>
                     </tr>
                     </table>''',unsafe_allow_html=True)

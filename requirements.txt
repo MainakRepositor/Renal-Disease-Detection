@@ -1,6 +1,6 @@
 seaborn
 streamlit
-numpy
+numpy == 1.15.4
 matplotlib
 pandas
 scikit_learn

@@ -3,5 +3,4 @@ streamlit
 numpy
 matplotlib
 pandas
-pytables == 3.5.1
 scikit_learn

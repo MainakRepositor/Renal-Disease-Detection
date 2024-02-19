@@ -59,11 +59,13 @@ def app(df, X, y):
     df3.columns=["Bp","Al","Su","Bu","Sc","Sod","Pot","Hemo","Wbcc","Rbcc"]
     st.dataframe(df3)
 
+    score = prediction, score = predict(X, y, features)
+
     # Create a button to predict
     if st.button("Predict"):
         # Get prediction and model score
         # prediction, score = predict(X, y, features)
-        score = 0.9876 
+        # score = 0.9876 
      
 
         if(Bp > 125):

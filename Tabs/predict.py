@@ -72,6 +72,7 @@ def app(df, X, y):
         if(Bp > 125):
             st.error("The person has high risk of Renal problems induced by kidney malfunctioning")
             st.warning("Please consult a Nephrologist")
+            st.markdown('''🩺💉<p style="font-size:22px, color:light-blue">Medications</p>''',unsafe_allow_html=True)
             st.success("Angiotensin-converting enzyme (ACE) inhibitors, angiotensin II receptor blockers (ARBs), diuretics, calcium channel blockers, beta-blockers, and others may be prescribed depending on the underlying cause of the high blood pressure and the patient's overall health.")
         
         elif(Bu > 200):

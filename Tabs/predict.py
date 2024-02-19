@@ -72,28 +72,28 @@ def app(df, X, y):
         if(Bp > 125):
             st.error("The person has high risk of Renal problems induced by kidney malfunctioning")
             st.warning("Please consult a Nephrologist")
-            st.success('Angiotensin-converting enzyme (ACE) inhibitors, angiotensin II receptor blockers (ARBs), diuretics, calcium channel blockers, beta-blockers, and others may be prescribed depending on the underlying cause of the high blood pressure and the patient's overall health.')
+            st.success("Angiotensin-converting enzyme (ACE) inhibitors, angiotensin II receptor blockers (ARBs), diuretics, calcium channel blockers, beta-blockers, and others may be prescribed depending on the underlying cause of the high blood pressure and the patient's overall health.")
         
         elif(Bu > 200):
             st.error("High risk of bladder infection or kidney stone")
             st.warning("Recommended for Renal Ultrasonography")
-            st.success('Antibiotics are typically prescribed to treat bladder infections. For kidney stones, pain relief medications, alpha-blockers, and medications to help pass the stone may be prescribed. In some cases, surgery may be necessary.')
+            st.success("Antibiotics are typically prescribed to treat bladder infections. For kidney stones, pain relief medications, alpha-blockers, and medications to help pass the stone may be prescribed. In some cases, surgery may be necessary.")
 
         elif(Hemo > 13.5):
             st.error("The person is prone to get Renal Diseases!!")
             st.warning("High risk of kidney tumour")
-            st.success('Treatment for kidney tumors typically involves surgery to remove the tumor. In some cases, targeted therapy, immunotherapy, or chemotherapy may also be used.')
+            st.success("Treatment for kidney tumors typically involves surgery to remove the tumor. In some cases, targeted therapy, immunotherapy, or chemotherapy may also be used.")
 
         elif(Sc > 30):
             st.error("The person is prone to get Renal Diseases!!")
             st.warning("Improper filteration")
-            st.success('Treatment for improper filtration depends on the underlying cause. Medications that may be prescribed include diuretics, ACE inhibitors, ARBs, and others.')
+            st.success("Treatment for improper filtration depends on the underlying cause. Medications that may be prescribed include diuretics, ACE inhibitors, ARBs, and others.")
  
                         
         elif(Su > 2.5):
             st.error("The person is prone to get Renal Diseases!!")
             st.warning("High blood sugar")
-            st.success('Treatment for diabetes typically involves lifestyle changes (such as diet and exercise) and medications. Medications that may be prescribed include insulin, metformin, sulfonylureas, and others.')
+            st.success("Treatment for diabetes typically involves lifestyle changes (such as diet and exercise) and medications. Medications that may be prescribed include insulin, metformin, sulfonylureas, and others.")
 
         elif (Rbcc > 5 and Wbcc > 25000 and Al>3):
             st.error("REQUIRES IMMEDIATE DIALYSIS!!!")

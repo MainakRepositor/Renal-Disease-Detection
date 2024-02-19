@@ -1,7 +1,7 @@
 seaborn
 streamlit
-numpy == 1.15.4
+numpy
 matplotlib
-pandas == 0.24.1
+pandas
 pytables == 3.5.1
 scikit_learn
